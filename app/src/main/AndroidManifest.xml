@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.caffeine.encryptedify">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Encryptedify">
+        <activity
+            android:name=".UserInterface.UploadPasswordActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".Signing.ForgotPasswordActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Profile.AppInfoActivity" />
+        <activity
+            android:name=".Profile.ChangePasswordActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Profile.EditProfileActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".UserInterface.ProfileActivity" />
+        <activity
+            android:name=".UserInterface.EncryptionActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".UserInterface.HomeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".Signing.SignUpActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Signing.SignInActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

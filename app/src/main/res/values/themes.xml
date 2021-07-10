@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Encryptedify" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorOrange</item>
+        <item name="colorPrimaryVariant">@color/main_theme</item>
+        <item name="colorOnPrimary">@color/main_theme</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorOrange</item>
+        <item name="colorSecondaryVariant">@color/main_theme</item>
+        <item name="colorOnSecondary">@color/main_theme</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorDarkGrey</item>
+        <item name="android:windowDisablePreview">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.EncryptedifySplash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorOrange</item>
+        <item name="colorPrimaryVariant">@color/main_theme</item>
+        <item name="colorOnPrimary">@color/colorDarkBlue</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorOrange</item>
+        <item name="colorSecondaryVariant">@color/main_theme</item>
+        <item name="colorOnSecondary">@color/colorDarkBlue</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorDarkBlue</item>
+        <item name="android:windowDisablePreview">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

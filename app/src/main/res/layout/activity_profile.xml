@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:paddingStart="25dp"
+    android:paddingTop="15dp"
+    android:paddingEnd="10dp"
+    tools:context=".UserInterface.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="3dp"
+            app:contentPadding="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:indeterminateTint="@color/colorDarkGrey"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/encryption_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Encryption Key"
+                android:fontFamily="@font/typoring"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/encryption_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:text="0"
+                android:fontFamily="@font/typoring"
+                android:textColor="@color/colorBlue"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="90dp"
+            android:layout_toStartOf="@id/encryption_layout"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorGrey"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/typoring"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="36sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/ripple_bg_rounded_white">
+
+            <ImageView
+                android:id="@+id/place_one"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:src="@drawable/edit_profile"
+                app:tint="@color/colorBlue"
+                android:background="@drawable/circle_light_blue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/place_one"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/typoring"
+                android:textSize="18sp"
+                android:textColor="@color/colorDarkGrey"
+                android:text="Edit Profile"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:tint="@color/colorDarkGrey"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_forward"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:background="@drawable/ripple_bg_rounded_white">
+
+            <ImageView
+                android:id="@+id/place_two"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="11dp"
+                android:src="@drawable/lock"
+                app:tint="@color/colorGreen"
+                android:background="@drawable/circle_light_green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/place_two"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/typoring"
+                android:textSize="18sp"
+                android:textColor="@color/colorDarkGrey"
+                android:text="Change Password"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:tint="@color/colorDarkGrey"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_forward"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rate_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:background="@drawable/ripple_bg_rounded_white">
+
+            <ImageView
+                android:id="@+id/place_three"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="11dp"
+                android:src="@drawable/rate"
+                app:tint="@color/colorYellow"
+                android:background="@drawable/circle_light_yellow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/place_three"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/typoring"
+                android:textSize="18sp"
+                android:textColor="@color/colorDarkGrey"
+                android:text="Rate this app"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:tint="@color/colorDarkGrey"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_forward"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/app_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:background="@drawable/ripple_bg_rounded_white">
+
+            <ImageView
+                android:id="@+id/place_four"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="11dp"
+                android:src="@drawable/info"
+                app:tint="@color/colorOrange"
+                android:background="@drawable/circle_light_orange"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/place_four"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/typoring"
+                android:textSize="18sp"
+                android:textColor="@color/colorDarkGrey"
+                android:text="App Information"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:tint="@color/colorDarkGrey"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_forward"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp">
+
+        <LinearLayout
+            android:id="@+id/btn_sign_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/ripple_bg_rounded_light_grey">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/sign_out"
+                app:tint="@color/colorRed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Sign Out"
+                android:fontFamily="@font/typoring"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_theme">#FFFFFF</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorTransparentWhite">#26FFFFFF</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#B1B1B1</color>
+    <color name="colorLightGrey">#E6E6E6</color>
+    <color name="colorDarkGrey">#4A4A4A</color>
+
+    <color name="colorBlue">#0056FF</color>
+    <color name="colorDarkBlue">#030C1E</color>
+    <color name="colorLightBlue">#DAE7FF</color>
+    <color name="colorDark">#434961</color>
+    <color name="colorGreen">#00C657</color>
+    <color name="colorLightGreen">#D4FFD6</color>
+    <color name="colorOrange">#FE6901</color>
+    <color name="colorLightOrange">#FFE4D2</color>
+    <color name="colorYellow">#FFE600</color>
+    <color name="colorLightYellow">#FFFFD5</color>
+    <color name="colorLightRed">#FFD1D1</color>
+    <color name="colorRed">#FF0000</color>
+</resources>

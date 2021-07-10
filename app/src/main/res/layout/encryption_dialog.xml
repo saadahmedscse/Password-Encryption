@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_rounded_light_grey"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encryption Key"
+        android:fontFamily="@font/typoring"
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Submit your permanent encryption key. You won't be able to change it in future. Only you will know this key. All your passwords will encrypt and decrypt by this key."
+        android:fontFamily="@font/nunito"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_key_one"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rounded_white"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:fontFamily="@font/nunito"/>
+
+        <EditText
+            android:id="@+id/et_key_two"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/bg_rounded_white"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:fontFamily="@font/nunito"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/key_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:text="Key cannot be empty"
+        android:fontFamily="@font/typoring"
+        android:textSize="16sp"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/btn_submit_key"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_bg_rounded_orange"
+            android:text="Submit"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:fontFamily="@font/typoring"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:indeterminateTint="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
